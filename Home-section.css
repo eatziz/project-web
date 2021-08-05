@@ -1,0 +1,47 @@
+  /*Home section*/
+  .home {
+    height: 100vh;
+    background-image: url(../images/background/background1.webp);
+    background-size: cover ; /*علشان الصورة تصير بنفس مقاسها الحقيقي على الصفحة */
+    position: relative; /*علشان عنصر الصورة يكون فوقه عنصر هذا الاب*/
+
+}
+
+.home-content{
+    position: absolute;/*الابن */
+    width: 65%; /* لاجل عرض الكلام اللي بالنص*/
+    top: 50%;/*بالوسط الكلام*/
+    left: 50%;
+    transform: translate(-50%,-50%);/*نص الشاشة لكلام*/
+    text-align: center;/*الكلام وسط المربع يصير بالنص */
+}
+
+.home .title {
+    color:wheat;
+    font-size: 3rem;
+    text-transform: uppercase; /* كبتل */
+
+}
+.home-desc{
+    margin:20px 0; /*  يمين وشمال مش عايز مسافة بين الكلام شي بسيط*/
+    color: #fff;
+    letter-spacing: 2px; /*مسافة بين الاحرف شي بسيط*/
+    line-height: 1.5 /*ابعد السطور عن بعض*/
+}
+.home .btn{/*انادري البوتون*/
+    min-width: 160px;
+    padding: 15px 0;/*يمين ويسار*/
+    border-radius: 5px;
+    border: 0;/*اشيل البوردر*/
+    cursor: pointer; /*يغير شكل الماوس على اليد*/
+    font-size: 15px;
+
+}
+.home .btn-start{
+     margin-right: 10px ;
+    background-color: #fff;
+ }
+ .home .btn-learn{
+   background-color: #6195ff; /**/
+   color: #fff;
+}

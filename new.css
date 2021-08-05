@@ -1,0 +1,71 @@
+.html { 
+    direction: ltr;
+    display: flex; /*القوائم بجنب بعض */
+    flex-grow: 2; /*علشان الخصائص الللي بجنب بعض تكون قياساتها ثابته */
+    flex-wrap: wrap;/*لما تصغر الشاشة الي ماله مساحة تنزل تحت*/
+    flex-basis: 500px;
+    order: 2;
+    min-height: 0;
+    min-width: ;
+    flex-flow: column or row;
+    justify-content: flex-start or center ;تكون افقي من البداية الصفحة
+  
+}
+ <nav>
+ علشان ul 
+ احطها فية </nav>
+
+
+ علشان لو صغرنا الشاشة تبقى القيم بنفسىالشاشة ماتختفي
+ @media (max-width:786px) {
+     nav 
+     {
+     flex-direction: column ;
+     
+ }}
+
+
+ .graed {
+     grid-template-areas: "hd hd hd hd " "hd . min min ";
+     grid-gap: 10px;
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     grid-area: ad; 
+
+ }
+
+
+
+ /*any هنا تقول للمتصفح وحطيت نوعه لجميع العناصر اني اللي فيها h2 عطها اللون الاخضر*/
+ :-webkit-any(art , min ,secthin ) h2 {
+     color: green;
+ }
+
+
+ /*هنا قلت اعط p كلها لون اخضر ماعدا كلاس فرست */
+p:not(.first) {
+    color: green;
+}
+
+
+/*علشان مايقدر المستخدم يسوي تحديد للجملة */
+p {
+    -webkit-user-select: none;  
+}
+/*يقدر يحدد لكل الصفحة*/
+*{
+    -webkit-user-select:all; 
+    align-items: center; /*horizontal*/
+    justify-content: center; /*vertical*/
+}
+
+
+
+/*400px للجوال*/
+/*هنا اقولها لو الشاشه حقت التابلت مقاسها كذا خل الصور بنسبة كذا واستدعي الاسم*/
+@media screen and (max-width:768px) {
+    .images img {
+        width: 48%;
+    }
+    
+}
