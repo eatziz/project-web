@@ -1,0 +1,604 @@
+<html>
+      <head>
+             <meta charset="utf-8">
+             <meta name="viewport" content="width=device-width , initial-scale = 1.0"> <!--علشان اخلي الموقع شغال على كل الاجهزة-->
+             <meta name="keywords" content="" />
+             <meta name="description" content="" />
+             <title>HTML CSS Template 1</title>
+               <!-- مكتبة في كوري علشان الصور تناسب اي شاشة  واخذ رابط المكتبة واحطه تحت-->
+             <script> document.createElement ("picture");
+            </script>
+
+             <!--رابط الخط من قوقل فونت-->
+             <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+<!--امتداد ملف الستايل يكون اخر شي وقبله ملف الخط وغيرة-->
+
+             <link rel="stylesheet" href="css/font-awesome.min.css">
+             <link rel="stylesheet" href="css/style.css">
+             <link rel="stylesheet" href="css/Home-section.css">
+           
+      </head>   
+
+      <body> 
+          
+
+             <!--الهيدر سيكشن -->
+             <!--header-->
+            <div class="header">
+                <div class="container"> <!--تحت الهيدر لازم -->
+                    <div class="header-content"> <!--علشان float الابناء -->
+                        
+                         <div class="logo" >
+                          <img src="images/logo-alt.webp.png" alt="Logo Image" draggable="false">
+
+                          </div>
+                         <ul class="nav">
+                                <li> <a href="#" class="active">HOME</a></li>
+                                <li> <a href="#">ABOUT</a></li>
+                                <li> <a href="#">Portfolio</a></li>
+                                <li> <a href="#">Services</a></li>
+                                <li> <a href="#">Prices</a></li>
+                                <li> <a href="#">Team</a></li>
+                                <li class="dropdown"> <a href="#">Blog</a>
+
+                                    
+                                     <ul class="dropdown-menu">
+                                         <li> <a href="#">blog post </a> </li>
+                                     </ul>
+                                    </li>
+                                <li> <a href="#">Contact</a></li>
+                         </ul>
+
+                         <div class="clear"></div><!--لحل مشكلة float-->
+                   
+                    </div>
+                </div>
+             </div>
+             <!-- الهوم سكشن -->
+             <div class="home">
+                 <div class="overlay"> <!-- واقفلها تحت لان اذا قفلتها فوق راح يصير الكلام تحت التظليل علشان  عنصر الصور احط فوقها عنصر -->
+                 <div class="home-content">
+
+                            <h1 class="title"> We are a creative agency </h1> <!--استخدم كلاس علشان انادية فيCSS-->
+                            <p class="home-desc"> a lot of gas stands at soccer players justo.
+                                 in pull diameter is large carrots pregnant vehicles. Mauris developers television set, but arcu.Nunc
+                            </p>
+                            <button class="btn btn-start hover-opacity">Get Started !</button>
+                            <button class="btn btn-learn hover-opacity">Learn More !</button><!--hover-opacity علشان لما استدعي جميع البوتون يكون عليها مظلل بشكل خفيف -->
+                 </div>
+                </div>   
+            </div>
+            <!--الهيدر سكشن -->
+           <!-- <div class="section-header">
+                <h2 class="section-title"> welcom to website </h2>
+                <span class="line"></span>
+
+            </div>-->
+
+            <!--اباوت سكشن-->
+            <div class="about pd-y"><!--كتبت pd-y  علشان اناده في لما احدد المسافة بين السكشنات-->
+                    <div class="section-header">
+                        <h2 class="section-title"> welcom to website </h2>
+                        <span class="line"></span><!--الخط اللي تحت تو-->
+                    </div>
+                    
+
+                    <div class="container">
+                        <div class="about-content">
+
+                            <div class="about-item ltr-effect">
+                             <i class="icon fa fa-cogs fa-2x"></i> <!--الصورة-->
+                             <h2 class="about-item-title">fully customizable</h2>
+                             <p class="about-item-desc">maecenas tempus tellus tellus eget
+                                  condimentum rhoncus sem quam semper libero sit amet</p>
+                             <a href="#" class="about-item-link">read more</a>
+                             
+                            </div>
+                           
+                            <div class="about-item  ltr-effect mg">
+                                <i class="icon fa fa-magic fa-2x"></i> <!--الصورة-->
+                                <h2 class="about-item-title">fully customizable</h2>
+                                <p class="about-item-desc">maecenas tempus tellus tellus eget 
+                                    condimentum rhoncus sem quam semper libero sit amet</p>
+                                <a href="#"class="about-item-link">read more</a>
+                                
+                            </div>
+                           
+                            <div class="about-item  ltr-effect">
+                                <i class="icon fa fa-mobile fa-2x"></i> <!--الصورة-->
+                                <h2 class="about-item-title">fully customizable</h2>
+                                <p class="about-item-desc">maecenas tempus tellus tellus eget
+                                     condimentum rhoncus sem quam semper libero sit amet</p>
+                                <a href="#"class="about-item-link">read more</a>
+                                
+                             </div>
+                            <div class="clear"></div><!--لحل مشكلة float-->
+                        </div>
+                    </div>
+             </div>
+             <!--برتوفول سكشن -->
+             <div class="portfolio pd-y">
+                 <div class="section-header"><!--عنوان السيكشن انادية -->
+                     <h2 class="section-title"> featured works</h2>
+                     <span class="line"></span>
+                 </div>
+                <div class="container">
+                <div class="portfolio-content">
+
+                    <div class="portfolio-item"><!--الاب-->
+                        <img src="images/work/work1.webp" alt="">
+                            <div class="layer-content"><!-- يكون مخفي الابن-->
+                                <div class="layer-info">
+                                <span class="category">category</span>
+                                <h3 class="layer-content-title">
+                                    lorem,ipsum dolor.
+                                </h3>
+                               <a href="#"><i class="fa fa-edit "></i></a>
+                               <a href="#"><i class="fa fa-search  "></i></a> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item mg">
+                        <img src="images/work/work2.webp" alt="">
+                        <div class="layer-content"><!-- يكون مخفي الابن-->
+                            <div class="layer-info">
+                            <span class="category">category</span>
+                            <h3 class="layer-content-title">
+                                lorem,ipsum dolor.
+                            </h3>
+                           <a href="#"><i class="fa fa-edit "></i></a>
+                           <a href="#"><i class="fa fa-search  "></i></a> 
+                        </div>
+                    </div>
+                    </div><div class="portfolio-item">
+                        <img src="images/work/work3.webp" alt="">
+                        <div class="layer-content"><!-- يكون مخفي الابن-->
+                            <div class="layer-info">
+                            <span class="category">category</span>
+                            <h3 class="layer-content-title">
+                                lorem,ipsum dolor.
+                            </h3>
+                           <a href="#"><i class="fa fa-edit "></i></a>
+                           <a href="#"><i class="fa fa-search  "></i></a> 
+                        </div>
+                    </div>
+                    </div><div class="portfolio-item">
+                        <img src="images/work/work4.webp" alt="">
+                        <div class="layer-content"><!-- يكون مخفي الابن-->
+                            <div class="layer-info">
+                            <span class="category">category</span>
+                            <h3 class="layer-content-title">
+                                lorem,ipsum dolor.
+                            </h3>
+                           <a href="#"><i class="fa fa-edit "></i></a>
+                           <a href="#"><i class="fa fa-search  "></i></a> 
+                        </div>
+                    </div>
+                    </div><div class="portfolio-item mg">
+                        <img src="images/work/work5.webp" alt="">
+                        <div class="layer-content"><!-- يكون مخفي الابن-->
+                            <div class="layer-info">
+                            <span class="category">category</span>
+                            <h3 class="layer-content-title">
+                                lorem,ipsum dolor.
+                            </h3>
+                           <a href="#"><i class="fa fa-edit "></i></a>
+                           <a href="#"><i class="fa fa-search  "></i></a> 
+                        </div>
+                    </div>
+                    </div><div class="portfolio-item">
+                        <img src="images/work/work6.webp" alt="">
+
+                           <div class="layer-content"><!-- يكون مخفي الابن-->
+                                <div class="layer-info">
+                                <span class="category">category</span>
+                                <h3 class="layer-content-title">
+                                    lorem,ipsum dolor.
+                                </h3>
+                               <a href="#"><i class="fa fa-edit "></i></a>
+                               <a href="#"><i class="fa fa-search  "></i></a> 
+                            </div>
+                        </div>
+                    </div>
+
+                           
+                        </div>
+                    </div>
+             </div>
+
+                 <!--اوفر سكشن -->
+             <div class="offer pd-y"><!--علشان تنسيق العنوان-->
+                <div class="section-header">
+                    <h2 class="section-title"> what we offer </h2>
+                    <span class="line"></span>
+    
+                </div>
+                 <div class="container"> <!--علشان ابغاها تبدا من النص-->
+                    <div class="offer-content"><!--علشان الفلوت اعطيه اوفر فلوت-->
+
+                           <div class="offer-item ltr-effect">
+                        <i class="icon fa fa-diamond fa-2x"></i>
+                        <h2 class="offer-item-title">app devlopment</h2>
+                        <p class="offer-item-desc">maecenas tempus tellus eget condimentum 
+                            sem quam semper libero </p>
+                            </div>
+                   
+                    <div class="offer-item mg ltr-effect"><!--الثاني والخامس اخذ mg علشان خصاصئهم ل -->
+                        <i class="icon fa fa-rocket fa-2x"></i>
+                        <h2 class="offer-item-title">graphic design</h2>
+                        <p class="offer-item-desc">maecenas tempus tellus eget condimentum 
+                            sem quam semper libero </p>
+                            </div>
+                    <div class="offer-item ltr-effect">
+                         <i class="icon fa fa-cogs fa-2x"></i>
+                         <h2 class="offer-item-title">creative idea</h2>
+                         <p class="offer-item-desc">maecenas tempus tellus eget condimentum 
+                                    sem quam semper libero </p>
+                                    </div>
+                     <div class="offer-item ltr-effect">
+                         <i class="icon fa fa-diamond fa-2x"></i>
+                         <h2 class="offer-item-title">marketing</h2>
+                         <p class="offer-item-desc">maecenas tempus tellus eget condimentum 
+                                            sem quam semper libero </p>
+                                            </div>
+                     <div class="offer-item mg ltr-effect">
+                         <i class="icon fa fa-pencil fa-2x"></i>
+                         <h2 class="offer-item-title">awesome support</h2>
+                         <p class="offer-item-desc">maecenas tempus tellus eget condimentum 
+                                                    sem quam semper libero </p>
+                                                </div>
+                    <div class="offer-item ltr-effect">
+                         <i class="icon fa fa-flask fa-2x"></i>
+                         <h2 class="offer-item-title">brand design</h2>
+                         <p class="offer-item-desc">maecenas tempus tellus eget condimentum 
+                                                        sem quam semper libero </p>
+                                                        </div>
+                  </div>
+
+                 </div>
+             </div>
+                <!--سيرفر سيكشن-->
+
+                <div class="service pd-y">
+                    <div class="continer">
+                        <div class="service-item">
+                            <div class="section-header">
+                                <h2 class="section-title">why choose us</h2>
+                                <span class="line"></span>
+                            </div>
+                            <p class="service-item-desc">
+                                maecenas tempus tellus eget condimentum 
+                                sem quam semper libero maecenas tempus tellus eget condimentum 
+                                sem quam semper libero maecenas tempus tellus eget condimentum 
+                                sem quam semper libero maecenas tempus tellus eget condimentum 
+                                sem quam semper libero maecenas tempus tellus eget condimentum 
+                                sem quam semper libero  
+                            </p>
+                            <ul class="service-list">
+                                <li> <i class="fa fa-check fa-fw"></i>   tempus tellus eget condimentum </li>
+                                <li>  <i class="fa fa-check fa-fw"></i>   tempus tellus eget condimentum </li>
+                                <li>  <i class="fa fa-check fa-fw"></i>  tempus tellus eget condimentum </li>
+                                <li>  <i class="fa fa-check fa-fw"></i>   tempus tellus eget condimentum </li>
+                            </ul>
+                        </div>
+                        <div class="service-item">
+                                <div class="service-item-img">
+                                    <img src="images/about/about1.webp" alt="">
+                                </div>
+                                <ul class="service-bollets">
+                                    <li class="active"></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
+                <!--نمبر سكشن-->
+                <div class="numbers"><!--يشيل السكشن كامل-->
+                    <div class="overlay"><!-- اعمل الطبقة السوداءاللي فوق الصورة الابن علشان يتحرك ضمن اطار الاب اللي فوق-->
+                        <div class="container"><!-- ومايبدا من حواف الصفحة علشان باك قراوند الصوره -->
+
+                            <div class="numbers-items pd-y"><!--اعطيها اوفر فلوت-->
+
+                                <div class="number-item">   
+                                <i class="icon fa fa-users fa-2x"></i>
+                                <h3 class="number-item-title">451</h3>
+                                <span class="number-item-text">happy clients</span>
+                                
+                                </div>
+                                <div class="number-item">
+                                    <i class="icon fa fa-trophy fa-2x"></i>
+                                    <h3 class="number-item-title">451</h3>
+                                    <span class="number-item-text">happy clients</span>
+                                    
+                                    
+                                </div>
+                                <div class="number-item">
+                                    <i class="icon fa fa-coffee fa-2x"></i>
+                                    <h3 class="number-item-title">451k</h3>
+                                    <span class="number-item-text">happy clients</span>
+                                    
+                                    
+                                </div>
+                                <div class="number-item">
+                                    <i class="icon fa fa-file fa-2x"></i>
+                                    <h3 class="number-item-title">451</h3>
+                                    <span class="number-item-text">happy clients</span>
+                                    
+                                    
+                                </div>
+                            </div>
+                       
+                    </div>
+                    
+                </div>
+                </div>
+                <!--برايسنق سيكشن -->
+                <div class="pricing pd-y"> <!--كتبت pd-y  علشان اناده في لما احدد المسافة بين السكشنات-->
+                   <div class="section-header">
+                        <h2 class="section-title"> pricing table </h2>
+                        <span class="line"></span><!--الخط اللي تحت تو-->
+                     </div>
+                         <div class="container">
+                            <div class="pricing-plans"><!-- الاب ياخذ الاوفر فلو-->
+
+                                <div class="pricing-item tb-effect">
+                                    <span class="pricing-item-text">basic plan</span>
+                                    <div class="pricint-item-permonth">
+                                        <h3 class="doller">$9</h3>
+                                        <span class="month">/month</span>
+                                    </div>
+                                    <ul class="pricing-list">
+                                        <li>1gb disk space</li>
+                                        <li>100 email account</li>
+                                        <li>24/24 support</li>
+                                    </ul>
+                                    <button class="pricing-item-purchase">purchase now</button>
+                                </div>
+                                
+                                <div class="pricing-item tb-effect mg">
+                                    <span class="pricing-item-text">basic plan</span>
+                                    <div class="pricint-item-permonth">
+                                        <h3 class="doller">$10</h3>
+                                        <span class="month">/month</span>
+                                    </div>
+                                    <ul class="pricing-list">
+                                        <li>1gb disk space</li>
+                                        <li>100 email account</li>
+                                        <li>24/24 support</li>
+                                    </ul>
+                                    <button class="pricing-item-purchase">purchase now</button>
+                                </div>
+                                 
+                                <div class="pricing-item tb-effect">
+                                    <span class="pricing-item-text">basic plan</span>
+                                    <div class="pricint-item-permonth">
+                                        <h3 class="doller">$49</h3>
+                                        <span class="month">/month</span>
+                                    </div>
+                                    <ul class="pricing-list">
+                                        <li>1gb disk space</li>
+                                        <li>100 email account</li>
+                                        <li>24/24 support</li>
+                                    </ul>
+                                    <button class="pricing-item-purchase">purchase now</button>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                     
+                </div>
+                <!--تيست منول-->
+            <div class="testimonail"><!--علشان باك قراوند اميج-->
+                    <div class="overlay"> <!--علشان الطبقة اللي فوق باك قراوند-->
+                        <div class="container"><!--علشان الكلام مايخرج على الحواف-->
+                            <div class="testimonail-content"><!--الابناء بياخذون فلوت فالاب ياخذاوفر فلوت-->
+                                   <!--بجنب بعض-->
+                                    <div class="testimonail-item">
+                                                <div class="testimonail-toplayer">
+                                            <img src="images/Testimonial/perso1.webp" alt="">
+                                            <h3>jone doe</h3>
+                                            <span>web designer</span>
+                                            </div>
+                                            <p class="testimonail-desc">
+                                                quapus tellus eget condimentum sem qua
+                                            semper libero maecenas tempus tellus eget condimentum sem quam</p>
+                                             </div>
+                                             <div class="testimonail-item">
+                                                <div class="testimonail-toplayer">
+                                            <img src="images/Testimonial/perso2.webp" alt="">
+                                            <h3>jone doe</h3>
+                                            <span>web designer</span>
+                                            </div>
+                                            <p class="testimonail-desc"> condimentum sem quampus tellus eget condimentum sem quapus tellus eget condimentum sem qua
+                                            semper libero maecenas tempus tellus eget condimentum sem quam</p>
+                                             </div>
+                            </div>
+                            </div>
+                        </div>
+                </div>
+               <!--تيم سكشن -->
+               <div class="team pd-y">
+                   <div class="section-header">
+                       <h2 class="section-title">our team</h2>
+                       <span class="line"></span>
+                       </div>
+                       <div class="container">
+                           <div class="team-content">
+
+                               <div class="team-item tb-effect"> <!--هنا نبدا في الايتم نحط الموضوع-->
+
+                              <div class="taem-img">
+
+                                  <img src="images/team/team1.webp" alt=""><!--الصورة-->
+
+                                  <div class="team-overlay"><!--علشان راح تكون فيه طبقها فيها تويتر ايقونه فاعطيها اوفرلي-->
+                                      <a href="#"> <i class="fa fa-facebook"></i></a>     
+                                      <a href="#"> <i class="fa fa-twitter"></i></a> 
+                                      <a href="#"> <i class="fa fa-linkedin"></i></a>  
+                                     </div>
+                              </div>
+                              <div class="taem-info">
+                                  <h3 class="taem-info-title">john doe</h3>
+                                  <span class="taem-info-text">web designer</span>
+                              </div>
+                           </div>
+
+
+                           <div class="team-item tb-effect mg"> <!--هنا نبدا في الايتم نحط الموضوع-->
+
+                            <div class="taem-img">
+                                <img src="images/team/team2.webp" alt=""><!--الصورة-->
+                                <div class="team-overlay"><!--علشان راح تكون فيه طبقها فيها تويتر ايقونه فاعطيها اوفرلي-->
+                                    <a href="#"> <i class="fa fa-facebook"></i></a>     
+                                    <a href="#"> <i class="fa fa-twitter"></i></a> 
+                                    <a href="#"> <i class="fa fa-linkedin"></i></a>  
+                                   </div>
+                             </div>
+                            <div class="taem-info">
+                                <h3 class="taem-info-title">john doe</h3>
+                                <span class="taem-info-text">web designer</span>
+                            </div>
+                         </div>
+
+                         <div class="team-item tb-effect"> <!--هنا نبدا في الايتم نحط الموضوع-->
+
+                            <div class="taem-img">
+                                <img src="images/team/team3.webp" alt=""><!--الصورة-->
+                                <div class="team-overlay"><!--علشان راح تكون فيه طبقها فيها تويتر ايقونه فاعطيها اوفرلي-->
+                                    <a href="#"> <i class="fa fa-facebook"></i></a>     
+                                    <a href="#"> <i class="fa fa-twitter"></i></a> 
+                                    <a href="#"> <i class="fa fa-linkedin"></i></a>  
+                                   </div>
+                            </div>
+                            <div class="taem-info">
+                                <h3 class="taem-info-title">john doe</h3>
+                                <span class="taem-info-text">web designer</span>
+                            </div>
+                               </div>
+                              </div>
+                         </div>
+               </div>
+
+
+                <!--بلوق سكشن-->
+                <div class="blog pd-y">
+                <div class="section-header">
+                    <h2 class="section-title">recents news </h2>
+                    <span class="line"></span>
+                </div>
+
+                <div class="container">
+                    <div class="blog-content">
+
+                    <div class="blog-item">
+                        <div class="blog-item-img">
+                            <img src="images/blog/blog1.webp" alt="">
+
+                        </div>
+                        <div class="blog-info"><!--علشان اللي تحت الصورة ابغى اعطيها زي الميرجن من جميع الجهات فيه مسافة -->
+                        <ul class="blog-list">
+                            <li>
+                                <i class="fa fa-user"></i>
+                                jone doe
+                            </li>
+                            <li>
+                                <i class="fa fa-clock-o"></i>
+                                18 oct
+                            </li>
+                            <li>
+                                <i class="fa fa-comments"></i>
+                               57
+                            </li>
+                        </ul>
+
+                        <h3 class="blog-title">Fully Customizable</h3>
+                        <p class="blog-desc">maecenas tempus tellus tellus eget condimentum
+                             rhoncus sem quam semper libero sit amet
+                            </p>
+                        <a href="#" class="blog-link">Read More</a>
+                           </div>
+                        </div>
+                        <div class="blog-item mg">
+                            <div class="blog-item-img">
+                                <img src="images/blog/blog2.webp" alt="">
+    
+                            </div>
+                            <div class="blog-info"><!--علشان اللي تحت الصورة ابغى اعطيها زي الميرجن من جميع الجهات فيه مسافة -->
+                            <ul class="blog-list">
+                                <li>
+                                    <i class="fa fa-user"></i>
+                                    jone doe
+                                </li>
+                                <li>
+                                    <i class="fa fa-clock-o"></i>
+                                    18 oct
+                                </li>
+                                <li>
+                                    <i class="fa fa-comments"></i>
+                                   57
+                                </li>
+                            </ul>
+    
+                            <h3 class="blog-title">Fully Customizable</h3>
+                            <p class="blog-desc">maecenas tempus tellus tellus eget condimentum
+                                 rhoncus sem quam semper libero sit amet
+                                </p>
+                            <a href="#" class="blog-link">Read More</a>
+                               </div>
+                            </div>
+                            <div class="blog-item">
+                                <div class="blog-item-img">
+                                    <img src="images/blog/blog3.webp" alt="">
+        
+                                </div>
+                                <div class="blog-info"><!--علشان اللي تحت الصورة ابغى اعطيها زي الميرجن من جميع الجهات فيه مسافة -->
+                                <ul class="blog-list">
+                                    <li>
+                                        <i class="fa fa-user"></i>
+                                        jone doe
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-clock-o"></i>
+                                        18 oct
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-comments"></i>
+                                       57
+                                    </li>
+                                </ul>
+        
+                                <h3 class="blog-title">Fully Customizable</h3>
+                                <p class="blog-desc">maecenas tempus tellus tellus eget condimentum
+                                     rhoncus sem quam semper libero sit amet
+                                    </p>
+                                <a href="#" class="blog-link">Read More</a>
+                                   </div>
+                                </div>
+                     </div>
+                </div>
+
+                
+            </div>
+            <!--كونكت سكشن-->
+            <!--فوتير سكشن-->
+            <div class="footer bd-y">
+                <img src="images/logo-alt.webp.png" alt="">
+                <ul class="footer-links"><!--hover-opacity علشان تأثير لمسه المربع -->
+                    <li > <a href="#" class="hover-opacity"> <i class="fa fa-facebook"></i></a></li>
+                    <li > <a href="#" class="hover-opacity"> <i class="fa fa-twitter"></i></a></li>
+                    <li > <a href="#" class="hover-opacity"> <i class="fa fa-youtube"></i></a></li>
+                    <li > <a href="#" class="hover-opacity"> <i class="fa fa-linkedin"></i></a></li>
+                    <li > <a href="#" class="hover-opacity"> <i class="fa fa-google-plus"></i></a></li>
+                    <li > <a href="#" class="hover-opacity"> <i class="fa fa-instagram"></i></a></li>
+                </ul>
+                <p class="copyright">copyright &copy; 2019 . all right reserved by colorlib</p>
+            </div>
+
+      </body>
+    
+ </html>
